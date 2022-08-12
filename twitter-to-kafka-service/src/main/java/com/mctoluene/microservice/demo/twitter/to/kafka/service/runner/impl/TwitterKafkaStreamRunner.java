@@ -6,6 +6,7 @@ import javax.annotation.PreDestroy;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
 import com.mctoluene.microservice.demo.twitter.to.kafka.service.config.TwitterToKafkaServiceConfigData;
@@ -18,6 +19,7 @@ import twitter4j.TwitterStream;
 import twitter4j.TwitterStreamFactory;
 
 @Component
+@ConditionalOnProperty(name = "twitter-to-kafka-service.enable-v2-tweets", havingValue = "false", matchIfMissing = true)
 public class TwitterKafkaStreamRunner implements StreamRunner {
     private static final Logger LOG = LoggerFactory.getLogger(TwitterKafkaStreamRunner.class);
     private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;
