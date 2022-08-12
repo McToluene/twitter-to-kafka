@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
-import com.mctoluene.microservice.demo.twitter.to.kafka.service.config.TwitterToKafkaServiceConfigData;
+import com.mctoluene.microservice.demo.config.TwitterToKafkaServiceConfigData;
 import com.mctoluene.microservice.demo.twitter.to.kafka.service.exception.TwitterToKafkaServiceException;
 import com.mctoluene.microservice.demo.twitter.to.kafka.service.listener.TwitterKafkaStatusListener;
 import com.mctoluene.microservice.demo.twitter.to.kafka.service.runner.StreamRunner;

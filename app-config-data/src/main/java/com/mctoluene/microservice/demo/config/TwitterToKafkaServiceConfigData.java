@@ -1,4 +1,4 @@
-package com.mctoluene.microservice.demo.twitter.to.kafka.service.config;
+package com.mctoluene.microservice.demo.config;
 
 import java.util.List;
 

@@ -7,11 +7,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
-import com.mctoluene.microservice.demo.twitter.to.kafka.service.config.TwitterToKafkaServiceConfigData;
+import com.mctoluene.microservice.demo.config.TwitterToKafkaServiceConfigData;
 import com.mctoluene.microservice.demo.twitter.to.kafka.service.runner.StreamRunner;
 
 @SpringBootApplication
+@ComponentScan(basePackages = "com.mctoluene.microservice.demo")
 public class TwitterToKafkaServiceApplication implements CommandLineRunner {
     private static final Logger LOG = LoggerFactory.getLogger(TwitterToKafkaServiceApplication.class);
     private final TwitterToKafkaServiceConfigData twitterToKafkaServiceConfigData;

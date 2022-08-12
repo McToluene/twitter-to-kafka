@@ -248,3 +248,11 @@ java.lang.NumberFormatException: For input string: "6911441806057939420a"
 2022-08-12 00:59:55 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text quisquam  adipisci  quisquam   dolorem Elasticsearch dolor velit...  quisquam
 2022-08-12 00:59:56 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet consectetur ipsum amet ipsum  quisquam  Microservices Neque Neque Lorem  dolorem
 2022-08-12 00:59:57 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit ipsum  dolorem sit Kafka Neque sit dolor
+2022-08-12 01:44:58 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 33287 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
+2022-08-12 01:44:58 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-08-12 01:44:58 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.55 seconds (JVM running for 0.962)
+2022-08-12 01:44:58 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
+2022-08-12 01:44:58 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2022-08-12 01:44:58 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
+2022-08-12 01:44:59 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet Neque Neque velit... consectetur Kafka ipsum adipisci Lorem
+2022-08-12 01:45:09 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text velit...  dolorem  qui  quisquam  porro ipsum Kafka est ipsum ipsum ipsum
