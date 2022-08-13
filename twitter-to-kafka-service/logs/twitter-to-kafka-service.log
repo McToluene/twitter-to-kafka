@@ -1,12 +1,99 @@
-2022-08-12 00:25:36 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 25377 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:25:36 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:25:36 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.632 seconds (JVM running for 0.963)
-2022-08-12 00:25:36 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:25:36 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:25:36 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2022-08-14 00:04:42 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 76311 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
+2022-08-14 00:04:42 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2022-08-14 00:04:43 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-08-14 00:04:43 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-08-14 00:04:43 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-08-14 00:04:43 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1660431883437
+2022-08-14 00:04:43 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080
+2022-08-14 00:04:43 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.266 seconds (JVM running for 1.68)
+2022-08-14 00:04:43 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
+2022-08-14 00:04:43 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Creating 1 topic(s), attempt 0
+2022-08-14 00:04:43 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2022-08-14 00:04:43 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Reading [-twitter-topic] topic(s), attempt 0
+2022-08-14 00:04:43 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Topic with name _schemas
+2022-08-14 00:04:43 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Topic with name __confluent.support.metrics
+2022-08-14 00:04:45 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Reading [-twitter-topic] topic(s), attempt 0
+2022-08-14 00:04:45 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Topic with name _schemas
+2022-08-14 00:04:45 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Topic with name __confluent.support.metrics
+2022-08-14 00:04:49 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Reading [-twitter-topic] topic(s), attempt 0
+2022-08-14 00:04:49 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Topic with name _schemas
+2022-08-14 00:04:49 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Topic with name __confluent.support.metrics
+2022-08-14 00:04:57 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Reading [-twitter-topic] topic(s), attempt 0
+2022-08-14 00:04:57 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Topic with name _schemas
+2022-08-14 00:04:57 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Topic with name __confluent.support.metrics
+2022-08-14 00:04:57 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2022-08-12 00:25:36 [main] ERROR o.s.boot.SpringApplication - Application run failed
+2022-08-14 00:04:57 [main] ERROR o.s.boot.SpringApplication - Application run failed
 java.lang.IllegalStateException: Failed to execute CommandLineRunner
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:774)
 	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
@@ -14,245 +101,16 @@ java.lang.IllegalStateException: Failed to execute CommandLineRunner
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
 	at com.mctoluene.microservice.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:26)
-Caused by: java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "com.mctoluene.microservice.demo.twitter.to.kafka.service.config.TwitterToKafkaServiceConfigData.getMinTweetLength()" is null
-	at com.mctoluene.microservice.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.start(MockKafkaStreamRunner.java:54)
-	at com.mctoluene.microservice.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:33)
+Caused by: com.mctoluene.microservice.demo.kafka.admin.exception.KafkaClientException: Reached max number of retry for reading kafka topic(s)!
+	at com.mctoluene.microservice.demo.kafka.admin.client.KafkaAdminClient.checkMaxRetry(KafkaAdminClient.java:113)
+	at com.mctoluene.microservice.demo.kafka.admin.client.KafkaAdminClient.checkTopicCreated(KafkaAdminClient.java:65)
+	at com.mctoluene.microservice.demo.kafka.admin.client.KafkaAdminClient.createTopic(KafkaAdminClient.java:54)
+	at com.mctoluene.microservice.demo.twitter.to.kafka.service.init.impl.KafkaStreamInitializer.init(KafkaStreamInitializer.java:24)
+	at com.mctoluene.microservice.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:32)
 	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
 	... 5 common frames omitted
-2022-08-12 00:25:57 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 25417 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:25:57 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:25:57 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.394 seconds (JVM running for 0.785)
-2022-08-12 00:25:57 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:28:12 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 25684 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:28:12 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:28:12 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.603 seconds (JVM running for 0.879)
-2022-08-12 00:28:12 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:28:24 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:28:24 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:31:13 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 26009 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:31:13 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:31:13 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.573 seconds (JVM running for 0.866)
-2022-08-12 00:31:13 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:31:23 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:31:23 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:32:22 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 26124 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:32:22 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:32:22 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.395 seconds (JVM running for 0.675)
-2022-08-12 00:32:22 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:32:22 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:32:22 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:33:06 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 26191 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:33:06 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:33:06 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.419 seconds (JVM running for 0.708)
-2022-08-12 00:33:06 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:33:06 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:33:06 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:35:08 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 26371 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:35:08 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:35:08 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.504 seconds (JVM running for 0.787)
-2022-08-12 00:35:08 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:35:08 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:35:08 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:36:12 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 26459 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:36:12 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:36:13 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.418 seconds (JVM running for 0.73)
-2022-08-12 00:36:13 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:36:13 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:36:13 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:37:31 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 26806 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:37:31 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:37:31 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.584 seconds (JVM running for 0.887)
-2022-08-12 00:37:31 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:37:31 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:37:31 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:37:31 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter statuss
-java.lang.NumberFormatException: For input string: "{1}"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Long.parseLong(Long.java:711)
-	at java.base/java.lang.Long.valueOf(Long.java:1163)
-	at twitter4j.ParseUtil.getLong(ParseUtil.java:156)
-	at twitter4j.ParseUtil.getLong(ParseUtil.java:144)
-	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:100)
-	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
-	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
-	at com.mctoluene.microservice.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$0(MockKafkaStreamRunner.java:66)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-08-12 00:38:20 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 26881 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:38:20 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:38:20 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.403 seconds (JVM running for 0.739)
-2022-08-12 00:38:20 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:38:20 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:38:20 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:41:26 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter statuss
-java.lang.NumberFormatException: For input string: "{1}"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Long.parseLong(Long.java:711)
-	at java.base/java.lang.Long.valueOf(Long.java:1163)
-	at twitter4j.ParseUtil.getLong(ParseUtil.java:156)
-	at twitter4j.ParseUtil.getLong(ParseUtil.java:144)
-	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:100)
-	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
-	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
-	at com.mctoluene.microservice.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$0(MockKafkaStreamRunner.java:66)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-08-12 00:43:41 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 27445 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:43:41 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:43:41 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.41 seconds (JVM running for 0.727)
-2022-08-12 00:43:41 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:43:41 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:43:41 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:44:53 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 27548 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:44:53 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:44:53 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.395 seconds (JVM running for 0.839)
-2022-08-12 00:44:53 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:44:53 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:44:53 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:46:15 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 27681 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:46:15 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:46:15 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.553 seconds (JVM running for 0.979)
-2022-08-12 00:46:15 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:46:15 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:46:15 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:47:06 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 27786 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:47:06 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:47:06 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.422 seconds (JVM running for 0.715)
-2022-08-12 00:47:06 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:47:06 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:47:06 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:47:06 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter statuss
-twitter4j.TwitterException: Value 4075159916458517437 at user of type java.lang.String cannot be converted to JSONObject
-	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:194)
-	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
-	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
-	at com.mctoluene.microservice.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$0(MockKafkaStreamRunner.java:66)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: twitter4j.JSONException: Value 4075159916458517437 at user of type java.lang.String cannot be converted to JSONObject
-	at twitter4j.JSON.typeMismatch(JSON.java:100)
-	at twitter4j.JSONObject.getJSONObject(JSONObject.java:718)
-	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:114)
-	... 8 common frames omitted
-2022-08-12 00:47:23 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 27828 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:47:23 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:47:23 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.389 seconds (JVM running for 0.675)
-2022-08-12 00:47:23 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:47:23 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:47:23 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:47:23 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter statuss
-twitter4j.TwitterException: Value 1567532313213009859 at user of type java.lang.String cannot be converted to JSONObject
-	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:194)
-	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
-	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
-	at com.mctoluene.microservice.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$0(MockKafkaStreamRunner.java:66)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: twitter4j.JSONException: Value 1567532313213009859 at user of type java.lang.String cannot be converted to JSONObject
-	at twitter4j.JSON.typeMismatch(JSON.java:100)
-	at twitter4j.JSONObject.getJSONObject(JSONObject.java:718)
-	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:114)
-	... 8 common frames omitted
-2022-08-12 00:47:48 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 27872 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:47:48 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:47:48 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.39 seconds (JVM running for 0.667)
-2022-08-12 00:47:48 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:47:48 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:47:48 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:48:59 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter statuss
-twitter4j.TwitterException: Value 3403469841362062360 at user of type java.lang.String cannot be converted to JSONObject
-	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:194)
-	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
-	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
-	at com.mctoluene.microservice.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$0(MockKafkaStreamRunner.java:66)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: twitter4j.JSONException: Value 3403469841362062360 at user of type java.lang.String cannot be converted to JSONObject
-	at twitter4j.JSON.typeMismatch(JSON.java:100)
-	at twitter4j.JSONObject.getJSONObject(JSONObject.java:718)
-	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:114)
-	... 8 common frames omitted
-2022-08-12 00:56:01 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 28611 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:56:01 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:56:01 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.613 seconds (JVM running for 0.96)
-2022-08-12 00:56:01 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:56:01 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:56:01 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:56:23 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter statuss
-twitter4j.TwitterException: Value 5088166451695113335a at user of type java.lang.String cannot be converted to JSONObject
-	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:194)
-	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
-	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
-	at com.mctoluene.microservice.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$0(MockKafkaStreamRunner.java:66)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: twitter4j.JSONException: Value 5088166451695113335a at user of type java.lang.String cannot be converted to JSONObject
-	at twitter4j.JSON.typeMismatch(JSON.java:100)
-	at twitter4j.JSONObject.getJSONObject(JSONObject.java:718)
-	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:114)
-	... 8 common frames omitted
-2022-08-12 00:58:55 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 28855 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:58:55 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:58:55 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.559 seconds (JVM running for 0.874)
-2022-08-12 00:58:55 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:58:55 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:58:55 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:59:07 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Error creating twitter statuss
-java.lang.NumberFormatException: For input string: "6911441806057939420a"
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Long.parseLong(Long.java:711)
-	at java.base/java.lang.Long.valueOf(Long.java:1163)
-	at twitter4j.ParseUtil.getLong(ParseUtil.java:156)
-	at twitter4j.ParseUtil.getLong(ParseUtil.java:144)
-	at twitter4j.UserJSONImpl.init(UserJSONImpl.java:100)
-	at twitter4j.UserJSONImpl.<init>(UserJSONImpl.java:90)
-	at twitter4j.StatusJSONImpl.init(StatusJSONImpl.java:114)
-	at twitter4j.StatusJSONImpl.<init>(StatusJSONImpl.java:91)
-	at twitter4j.TwitterObjectFactory.createStatus(TwitterObjectFactory.java:55)
-	at com.mctoluene.microservice.demo.twitter.to.kafka.service.runner.impl.MockKafkaStreamRunner.lambda$0(MockKafkaStreamRunner.java:66)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2022-08-12 00:59:26 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 28916 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 00:59:26 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 00:59:26 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.404 seconds (JVM running for 0.674)
-2022-08-12 00:59:26 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 00:59:26 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:59:26 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 00:59:40 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text qui  qui quia Kafka consectetur quia
-2022-08-12 00:59:50 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text est  qui quia Microservices adipisci Lorem
-2022-08-12 00:59:51 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text porro porro amet ipsum Microservices amet  quisquam  Lorem
-2022-08-12 00:59:52 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit ipsum est ipsum dolor Java dolor  dolorem ipsum
-2022-08-12 00:59:53 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Neque  quisquam  est ipsum sit amet Java est dolor Lorem ipsum
-2022-08-12 00:59:54 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipisci Neque dolor dolor Kafka Neque sit
-2022-08-12 00:59:55 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text quisquam  adipisci  quisquam   dolorem Elasticsearch dolor velit...  quisquam
-2022-08-12 00:59:56 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet consectetur ipsum amet ipsum  quisquam  Microservices Neque Neque Lorem  dolorem
-2022-08-12 00:59:57 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit ipsum  dolorem sit Kafka Neque sit dolor
-2022-08-12 01:44:58 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.4 on McToluenes-MacBook-Pro.local with PID 33287 (/Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/twitter-to-kafka-service/target/classes started by mctoluene in /Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo)
-2022-08-12 01:44:58 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2022-08-12 01:44:58 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.55 seconds (JVM running for 0.962)
-2022-08-12 01:44:58 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
-2022-08-12 01:44:58 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 01:44:58 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
-2022-08-12 01:44:59 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet Neque Neque velit... consectetur Kafka ipsum adipisci Lorem
-2022-08-12 01:45:09 [pool-1-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text velit...  dolorem  qui  quisquam  porro ipsum Kafka est ipsum ipsum ipsum
+2022-08-14 00:04:57 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for adminclient-1 unregistered
+2022-08-14 00:04:57 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2022-08-14 00:04:57 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2022-08-14 00:04:57 [kafka-admin-client-thread | adminclient-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2022-08-14 00:04:57 [main] INFO  c.m.m.d.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer

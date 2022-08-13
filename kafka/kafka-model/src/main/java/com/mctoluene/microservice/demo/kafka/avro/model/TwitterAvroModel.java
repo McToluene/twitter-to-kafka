@@ -137,7 +137,6 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
 
     // Used by DatumReader. Applications should not call.
     @Override
-    @SuppressWarnings(value = "unchecked")
     public void put(int field$, java.lang.Object value$) {
         switch (field$) {
             case 0:
@@ -273,8 +272,7 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
      * RecordBuilder for TwitterAvroModel instances.
      */
     @org.apache.avro.specific.AvroGenerated
-    public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<TwitterAvroModel>
-            implements org.apache.avro.data.RecordBuilder<TwitterAvroModel> {
+    public static class Builder extends org.apache.avro.specific.SpecificRecordBuilderBase<TwitterAvroModel> {
 
         private long userId;
         private long id;
@@ -505,7 +503,6 @@ public class TwitterAvroModel extends org.apache.avro.specific.SpecificRecordBas
         }
 
         @Override
-        @SuppressWarnings("unchecked")
         public TwitterAvroModel build() {
             try {
                 TwitterAvroModel record = new TwitterAvroModel();
