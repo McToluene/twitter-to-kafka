@@ -44,7 +44,6 @@ public class KafkaAdminClient {
 
     public void createTopic() {
         CreateTopicsResult createTopicsResult;
-
         try {
             createTopicsResult = retryTemplate.execute(this::doCreateTopics);
             LOG.info("Create topic result {}", createTopicsResult.values().values());
@@ -114,7 +113,7 @@ public class KafkaAdminClient {
     }
 
     private boolean isTopicCreated(Collection<TopicListing> topicListings, String topicName) {
-        if (topicName == null)
+        if (topicListings == null)
             return false;
         return topicListings.stream().anyMatch(topic -> topic.name().equals(topicName));
     }
@@ -125,7 +124,8 @@ public class KafkaAdminClient {
         List<NewTopic> topics = topicNames.stream().map(n -> new NewTopic(n.trim(),
                 kafkaConfgData.getNumberOfPartitions(), kafkaConfgData.getReplicationFactor()))
                 .collect(Collectors.toList());
-        return adminClient.createTopics(topics);
+        var create = adminClient.createTopics(topics);
+        return create;
     }
 
     private Collection<TopicListing> getTopics() {
