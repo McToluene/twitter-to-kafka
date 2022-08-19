@@ -1,0 +1,10 @@
+spring:
+  appilication:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          url: file://Users/mctoluene/Documents/Training/even-driven-microservice/microservice-demo/config-server
+          clone-on-start: true
+    fail-fast: true
