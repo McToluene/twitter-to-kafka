@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/McToluene/cloud-config-server
+          username: McToluene
+          password: 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
+          clone-on-start: true
+      fail-fast: true

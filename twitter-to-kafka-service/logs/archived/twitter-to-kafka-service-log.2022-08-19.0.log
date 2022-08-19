@@ -1,0 +1,348 @@
+2022-08-19 23:58:04 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-08-19 23:58:04 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: 500 : "{"timestamp":"2022-08-19T22:58:04.652+00:00","status":500,"error":"Internal Server Error","path":"/twitter-to-kafka-service,config-client/twitter_to_kafka"}"
+2022-08-19 23:58:04 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - The following 1 profile is active: "twitter_to_kafka"
+2022-08-19 23:58:04 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6460b97b-5a1c-3495-8a14-544d880bf6ad
+2022-08-19 23:58:05 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-08-19 23:58:05 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-08-19 23:58:05 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-08-19 23:58:05 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1660949885260
+2022-08-19 23:58:05 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8080
+2022-08-19 23:58:05 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.808 seconds (JVM running for 2.306)
+2022-08-19 23:58:05 [main] INFO  c.m.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Application running...
+2022-08-19 23:58:05 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Creating 1 topic(s), attempt 0
+2022-08-19 23:58:05 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2022-08-19 23:58:05 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Reading [twitter-topic] topic(s), attempt 0
+2022-08-19 23:58:06 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Topic with name twitter-topic
+2022-08-19 23:58:06 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Topic with name _schemas
+2022-08-19 23:58:06 [main] INFO  c.m.m.d.k.a.client.KafkaAdminClient - Topic with name __confluent.support.metrics
+2022-08-19 23:58:06 [main] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS.
+java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>(DnsServerAddressStreamProviders.java:64)
+	at io.netty.resolver.dns.DnsNameResolverBuilder.<init>(DnsNameResolverBuilder.java:60)
+	at reactor.netty.transport.NameResolverProvider.newNameResolverGroup(NameResolverProvider.java:479)
+	at reactor.netty.tcp.TcpResources.getOrCreateDefaultResolver(TcpResources.java:315)
+	at reactor.netty.http.HttpResources.getOrCreateDefaultResolver(HttpResources.java:162)
+	at reactor.netty.http.client.HttpClientConfig.defaultAddressResolverGroup(HttpClientConfig.java:381)
+	at reactor.netty.transport.ClientTransportConfig.resolverInternal(ClientTransportConfig.java:224)
+	at reactor.netty.http.client.HttpClientConfig.resolverInternal(HttpClientConfig.java:435)
+	at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.lambda$subscribe$0(HttpClientConnect.java:266)
+	at reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:58)
+	at reactor.core.publisher.FluxRetryWhen.subscribe(FluxRetryWhen.java:77)
+	at reactor.core.publisher.MonoRetryWhen.subscribeOrReturn(MonoRetryWhen.java:46)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:57)
+	at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.subscribe(HttpClientConnect.java:273)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4397)
+	at reactor.core.publisher.Mono.block(Mono.java:1706)
+	at com.mctoluene.microservice.demo.kafka.admin.client.KafkaAdminClient.getSchemaRegistryStatus(KafkaAdminClient.java:94)
+	at com.mctoluene.microservice.demo.kafka.admin.client.KafkaAdminClient.checkSchemaRegistry(KafkaAdminClient.java:77)
+	at com.mctoluene.microservice.demo.twitter.to.kafka.service.init.impl.KafkaStreamInitializer.init(KafkaStreamInitializer.java:25)
+	at com.mctoluene.microservice.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:32)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:771)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.mctoluene.microservice.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:26)
+Caused by: java.lang.UnsatisfiedLinkError: failed to load the required native library
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.ensureAvailability(MacOSDnsServerAddressStreamProvider.java:110)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.<init>(MacOSDnsServerAddressStreamProvider.java:120)
+	... 33 common frames omitted
+Caused by: java.lang.UnsatisfiedLinkError: could not load a native library: netty_resolver_dns_native_macos_aarch_64
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:239)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.loadNativeLibrary(MacOSDnsServerAddressStreamProvider.java:92)
+	at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.<clinit>(MacOSDnsServerAddressStreamProvider.java:77)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders$1.run(DnsServerAddressStreamProviders.java:50)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.netty.resolver.dns.DnsServerAddressStreamProviders.<clinit>(DnsServerAddressStreamProviders.java:46)
+	... 27 common frames omitted
+	Suppressed: java.lang.UnsatisfiedLinkError: could not load a native library: netty_resolver_dns_native_macos
+		at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:239)
+		at io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider.loadNativeLibrary(MacOSDnsServerAddressStreamProvider.java:95)
+		... 33 common frames omitted
+	Caused by: java.io.FileNotFoundException: META-INF/native/libnetty_resolver_dns_native_macos.jnilib
+		at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:181)
+		... 34 common frames omitted
+		Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos in java.library.path: /Users/mctoluene/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+			at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2429)
+			at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:818)
+			at java.base/java.lang.System.loadLibrary(System.java:1989)
+			at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+			at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:391)
+			at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:161)
+			... 34 common frames omitted
+			Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos in java.library.path: /Users/mctoluene/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+				at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2429)
+				at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:818)
+				at java.base/java.lang.System.loadLibrary(System.java:1989)
+				at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+				at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+				at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+				at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+				at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+				at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:425)
+				at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+				at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:417)
+				at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:383)
+				... 35 common frames omitted
+Caused by: java.io.FileNotFoundException: META-INF/native/libnetty_resolver_dns_native_macos_aarch_64.jnilib
+	at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:181)
+	... 34 common frames omitted
+	Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos_aarch_64 in java.library.path: /Users/mctoluene/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+		at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2429)
+		at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:818)
+		at java.base/java.lang.System.loadLibrary(System.java:1989)
+		at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+		at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:391)
+		at io.netty.util.internal.NativeLibraryLoader.load(NativeLibraryLoader.java:161)
+		... 34 common frames omitted
+		Suppressed: java.lang.UnsatisfiedLinkError: no netty_resolver_dns_native_macos_aarch_64 in java.library.path: /Users/mctoluene/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+			at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2429)
+			at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:818)
+			at java.base/java.lang.System.loadLibrary(System.java:1989)
+			at io.netty.util.internal.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:38)
+			at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+			at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+			at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+			at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+			at io.netty.util.internal.NativeLibraryLoader$1.run(NativeLibraryLoader.java:425)
+			at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+			at io.netty.util.internal.NativeLibraryLoader.loadLibraryByHelper(NativeLibraryLoader.java:417)
+			at io.netty.util.internal.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:383)
+			... 35 common frames omitted
+2022-08-19 23:58:08 [main] INFO  c.m.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with the name twitter-topic is ready for operations!
+2022-08-19 23:58:08 [main] INFO  c.m.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Started filtering twitter for keywords [Java, Microservices, Kafka, Elasticsearch]
+2022-08-19 23:58:08 [pool-3-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Recieved status with text ipsum dolor dolor Java dolor Neque sending to kafka topic twitter-topic
+2022-08-19 23:58:08 [pool-3-thread-1] INFO  c.m.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message = '{"userId": 4613504006259150808, "id": 3997595812837207075, "text": "ipsum dolor dolor Java dolor Neque", "createdAt": 1660949888000}' to topic = 'twitter-topic' 
+2022-08-19 23:58:08 [pool-3-thread-1] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 163400
+	bootstrap.servers = [localhost:19092, localhost:29092, localhost:39092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2022-08-19 23:58:08 [pool-3-thread-1] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.remove.java.properties = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8081]
+	use.latest.version = false
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-08-19 23:58:08 [pool-3-thread-1] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2022-08-19 23:58:08 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.1.1
+2022-08-19 23:58:08 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 97671528ba54a138
+2022-08-19 23:58:08 [pool-3-thread-1] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1660949888770
+2022-08-19 23:58:08 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: Sjf69kPaRxiV22hpJEaENw
+2022-08-19 23:58:08 [kafka-producer-network-thread | producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 0 with epoch 0
+2022-08-19 23:58:20 [pool-3-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Recieved status with text Neque dolor ipsum dolor Java Neque dolor sending to kafka topic twitter-topic
+2022-08-19 23:58:20 [pool-3-thread-1] INFO  c.m.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message = '{"userId": 3728499244372086510, "id": 3144695373947382333, "text": "Neque dolor ipsum dolor Java Neque dolor", "createdAt": 1660949900000}' to topic = 'twitter-topic' 
+2022-08-19 23:58:30 [pool-3-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Recieved status with text quisquam  est adipisci sit velit... sit Elasticsearch porro  qui ipsum Neque sending to kafka topic twitter-topic
+2022-08-19 23:58:30 [pool-3-thread-1] INFO  c.m.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message = '{"userId": 386776150024622889, "id": 2276505182154143984, "text": "quisquam  est adipisci sit velit... sit Elasticsearch porro  qui ipsum Neque", "createdAt": 1660949910000}' to topic = 'twitter-topic' 
+2022-08-19 23:58:40 [pool-3-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Recieved status with text amet velit...  qui porro ipsum Microservices Neque Neque Neque quia sending to kafka topic twitter-topic
+2022-08-19 23:58:40 [pool-3-thread-1] INFO  c.m.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message = '{"userId": 7191650728263998529, "id": 4177380241700824347, "text": "amet velit...  qui porro ipsum Microservices Neque Neque Neque quia", "createdAt": 1660949920000}' to topic = 'twitter-topic' 
+2022-08-19 23:58:50 [pool-3-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Recieved status with text Neque dolor sit porro Kafka Lorem quia sending to kafka topic twitter-topic
+2022-08-19 23:58:50 [pool-3-thread-1] INFO  c.m.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message = '{"userId": 1232159840800284390, "id": 2393656278327278674, "text": "Neque dolor sit porro Kafka Lorem quia", "createdAt": 1660949930000}' to topic = 'twitter-topic' 
+2022-08-19 23:59:00 [pool-3-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Recieved status with text consectetur ipsum porro Microservices porro adipisci sending to kafka topic twitter-topic
+2022-08-19 23:59:00 [pool-3-thread-1] INFO  c.m.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message = '{"userId": 8692589444566237050, "id": 3879786866596154773, "text": "consectetur ipsum porro Microservices porro adipisci", "createdAt": 1660949940000}' to topic = 'twitter-topic' 
+2022-08-19 23:59:10 [pool-3-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Recieved status with text quisquam  amet porro  dolorem sit adipisci Microservices  quisquam  ipsum Neque sit sending to kafka topic twitter-topic
+2022-08-19 23:59:10 [pool-3-thread-1] INFO  c.m.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message = '{"userId": 7812840890508392173, "id": 4245194014420908003, "text": "quisquam  amet porro  dolorem sit adipisci Microservices  quisquam  ipsum Neque sit", "createdAt": 1660949950000}' to topic = 'twitter-topic' 
+2022-08-19 23:59:20 [pool-3-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Recieved status with text Lorem amet ipsum est ipsum Elasticsearch porro  quisquam  sit sending to kafka topic twitter-topic
+2022-08-19 23:59:20 [pool-3-thread-1] INFO  c.m.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message = '{"userId": 5141505613130951276, "id": 2186133700215924783, "text": "Lorem amet ipsum est ipsum Elasticsearch porro  quisquam  sit", "createdAt": 1660949960000}' to topic = 'twitter-topic' 
+2022-08-19 23:59:30 [pool-3-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Recieved status with text quia Lorem dolor porro Kafka ipsum ipsum  quisquam sending to kafka topic twitter-topic
+2022-08-19 23:59:30 [pool-3-thread-1] INFO  c.m.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message = '{"userId": 2985583263887148501, "id": 5130933786254827638, "text": "quia Lorem dolor porro Kafka ipsum ipsum  quisquam", "createdAt": 1660949970000}' to topic = 'twitter-topic' 
+2022-08-19 23:59:40 [pool-3-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Recieved status with text dolor amet Lorem Lorem  dolorem Java quia  quisquam  adipisci sending to kafka topic twitter-topic
+2022-08-19 23:59:40 [pool-3-thread-1] INFO  c.m.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message = '{"userId": 4823754611468829310, "id": 542816515962447416, "text": "dolor amet Lorem Lorem  dolorem Java quia  quisquam  adipisci", "createdAt": 1660949980000}' to topic = 'twitter-topic' 
+2022-08-19 23:59:50 [pool-3-thread-1] INFO  c.m.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Recieved status with text Neque adipisci dolor consectetur sit Microservices est consectetur dolor sending to kafka topic twitter-topic
+2022-08-19 23:59:50 [pool-3-thread-1] INFO  c.m.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message = '{"userId": 2723875777458027529, "id": 4547845792745100107, "text": "Neque adipisci dolor consectetur sit Microservices est consectetur dolor", "createdAt": 1660949990000}' to topic = 'twitter-topic' 
