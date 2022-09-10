@@ -60,6 +60,7 @@ public class KafkaAdminClient {
         Integer multiplier = retryConfigData.getMultiplier().intValue();
         Long sleepTimeMs = retryConfigData.getSleepTimeMs();
         for (String topic : kafkaConfgData.getTopicNamesToCreate()) {
+            System.out.println(topic);
             while (!isTopicCreated(topicListings, topic)) {
                 checkMaxRetry(retryCount++, maxRetry);
                 sleep(sleepTimeMs);

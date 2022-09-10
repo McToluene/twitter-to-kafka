@@ -7,10 +7,15 @@ spring:
         git:
           uri: https://github.com/McToluene/cloud-config-server
           username: McToluene
-          password: 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
+          password: ENC(88DSXImnnZsiFGjws1asQREcRCPj6zw2VIbjKQ/nh5qCkmPmEvft36+Z1QncOWbjXwWw6gdgU2Q=)
           clone-on-start: true
       fail-fast: true
   security:
     user:
       name: spring_cloud_user
-      password: springCloud_Pwd!
+      password: ENC(VxDiil4H7i0QMOlue/CGHqZ0445Wy9OhLsVb4tYBLJA=)
+
+jasypt:
+  encryptor:
+    algorithm: PBEWITHMD5ANDTRIPLEDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator

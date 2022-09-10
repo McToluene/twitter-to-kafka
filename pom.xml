@@ -43,6 +43,7 @@
     <netty-resolver.version>4.1.76.Final</netty-resolver.version>
     <spring-cloud.version>3.1.3</spring-cloud.version>
     <spring-cloud-dependencies.version>2021.0.3</spring-cloud-dependencies.version>
+    <jasypt.version>3.0.4</jasypt.version>
   </properties>
 
   <repositories>
@@ -197,6 +198,11 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-security</artifactId>
         <version>${spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.ulisesbocchio</groupId>
+        <artifactId>jasypt-spring-boot-starter</artifactId>
+        <version>${jasypt.version}</version>
       </dependency>
     </dependencies>
 
