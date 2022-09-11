@@ -35,3 +35,5 @@ build/
 */logs/
 
 META-INF
+
+.env
