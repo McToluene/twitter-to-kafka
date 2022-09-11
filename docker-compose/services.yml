@@ -28,7 +28,7 @@ services:
     volumes:
       - './docker-logs:/workspace/config-server/logs'
     environment:
-      - 'JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5006 -XX:NativeMemoryTracking=detail -Xms128m -Xmx256m'
+      - 'JAVA_OPTS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5006 -Xms128m -Xmx256m'
       - 'ENCRYPT_KEY=${ENCRYPT_KEY}'
     networks:
       - ${GLOBAL_NETWORK:-services}

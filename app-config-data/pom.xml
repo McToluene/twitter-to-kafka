@@ -9,8 +9,6 @@
 
   <groupId>com.mctoluene.microservice.demo</groupId>
   <artifactId>app-config-data</artifactId>
-  <version>0.1.0</version>
-
   <name>app-config-data</name>
 
   <properties>

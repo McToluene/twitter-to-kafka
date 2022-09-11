@@ -32,7 +32,8 @@ build/
 ### VS Code ###
 .vscode/
 
-*/logs/
+**/logs/**
+docker-logs
 
 META-INF
 

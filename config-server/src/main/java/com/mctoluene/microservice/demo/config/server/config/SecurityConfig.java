@@ -9,6 +9,6 @@ public class SecurityConfig {
 
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer() {
-        return (web) -> web.ignoring().antMatchers("/acuators/**", "/encrypt/**", "decrypt/**");
+        return (web) -> web.ignoring().antMatchers("/actuator/**", "/encrypt/**", "decrypt/**");
     }
 }

@@ -10,7 +10,6 @@
   </parent>
   <groupId>com.mctoluene.microservice.demo</groupId>
   <artifactId>kafka-admin</artifactId>
-  <version>0.1.0</version>
 
   <name>kafka-admin</name>
 

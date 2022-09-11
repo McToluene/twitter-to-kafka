@@ -9,7 +9,6 @@
 
   <groupId>com.mctoluene.microservice.demo</groupId>
   <artifactId>twitter-to-kafka-service</artifactId>
-  <version>0.1.0</version>
 
   <name>twitter-to-kafka-service</name>
 
